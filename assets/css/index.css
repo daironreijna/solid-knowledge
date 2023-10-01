@@ -1,0 +1,44 @@
+.containerGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr); */
+  grid-template-areas: 
+    "topRow topRow topRow topRow topRow topRow"
+    "topRow topRow topRow topRow topRow topRow"
+    /*"gridOne gridOne gridTwo gridTwo gridThree gridThree"
+    "gridFour gridFour gridFive gridFive gridSix gridSix"
+    */
+    "gridArea gridArea gridArea gridArea gridArea gridArea"
+    "gridArea gridArea gridArea gridArea gridArea gridArea"
+    "gridArea gridArea gridArea gridArea gridArea gridArea"
+    "footer footer footer footer footer footer"
+
+  /*width: 200px;
+  height: 150px; */
+}
+
+.topRow {
+  grid-area: topRow;
+}
+
+.gridArea {
+  grid-area: gridArea;
+  column-span: 2;
+  border-radius: 25px;
+  border: 2px dotted #73AD21;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+
+/*
+}
+
+/*
+.test {
+    background-color: red;
+}
